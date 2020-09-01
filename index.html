@@ -9,11 +9,11 @@
 	   <link href="/Content/Blue?v=tagr1894ImgjhSvvLmZZ7p_jPNEZYB9rkfd8p5esACk1" rel="stylesheet"/>
 		<!--
 		<script src="jquery-3.5.1.min.js"></script>
-		-->	
+		-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			
+				
 		<script>
-		var i=0;
+		
 			$(document).ready(function(){
 			$("#pan1").slideDown("slow",function(){
 			$("#pan2").slideDown(500,function(){
@@ -44,6 +44,7 @@
 			$("#divname1").fadeIn("slow",function(){
 			$("#divname2").fadeIn("slow",function(){
 			$("#div3").animate({opacity:.8,left:"90px"},400,function(){
+			$("#div3").fadeOut("slow");
 			$("#divname3").fadeIn("slow");
 			});
 			});
@@ -82,8 +83,59 @@
 			  $(this).css("background-color", "#db785a");
 			});
 			
-		
+			$("#div1,#div2,#div3,#divname1,#divname2,#divname3").hover(function(){
+			
+			  $("#divname1").fadeOut("slow");
+			  $("#divname2").fadeOut("slow");
+			  $("#divname3").fadeOut("slow",function(){
+			  $("#div3").fadeIn("slow",function(){
+			  $("#div3").animate({opacity:.8,left:"15px"},400,function(){
+			  $("#div2").animate({opacity:.8,left:"14px"},400,function(){
+			  $("#div1").animate({opacity:.8,left:"50px"},400,function(){
+			  $("#div3").animate({opacity:.8,left:"-30px"},400,function(){
+			  $("#div1").animate({opacity:.8,top:"80px"},400,function(){
+			  $("#div3").animate({opacity:.8,top:"-40px"},400,function(){
+			  $("#div2").animate({opacity:.8,top:"-40px"},400,function(){
+			  $("#div1").animate({opacity:.8,left:"15px"},400,function(){
+			  $("#div3").animate({opacity:.8,left:"15px"},400,function(){
+			  $("#div2").animate({opacity:.8,left:"50px"},400,function(){
+			  $("#div1").animate({opacity:.8,left:"-20px"},400,function(){
+			  $("#div2").animate({opacity:.8,top:"0px"},400,function(){
+			  $("#div1").animate({opacity:.8,top:"0px"},400,function(){
+			  $("#div3").animate({opacity:.8,top:"0px"},400,function(){
+			  $("#div2").animate({opacity:.8,left:"15px"},400,function(){
+			  $("#div1").animate({opacity:.8,left:"15px"},400,function(){
+			  $("#div2").animate({opacity:.8,left:"40px"},400,function(){
+			  $("#divname1").fadeIn("slow",function(){
+			  $("#divname2").fadeIn("slow",function(){
+			  $("#div3").animate({opacity:.8,left:"95px"},400,function(){
+			  $("#div3").fadeOut("slow");
+			  $("#divname3").fadeIn("slow");
+			  });
+			  });
+			  });
+			  });
+			  });
+			  });
+			  }); 
+			  });
+			  });
+			  });
+			  });
+			  }); 
+			  });
+			  });
+			  });
+			  });
+			  });
+			  });
+			  });
+			  });
+			  });
+			  });
+			
 			});
+		});
 			
 			
 		</script>
@@ -111,15 +163,17 @@
 			<br>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
-					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+					
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<center>
 							<img class="image" src="Photo/img3.jpg" style="height:150px; width:150px; border-radius:150px;">
 							<div id="name" style="margin-top:5px;padding-top:3px; padding-bottom:3px; width:150px; background-color:#db785a; color:white; border-radius:30px;"><b> Imran Hossain</b></div>
 							<div id="gmail" style=""><b><i>imran13854@gmail.com</i></b></div>
 						</center>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
 				</div>
 			</div>
 			<br> 
@@ -130,18 +184,18 @@
 						<center style="color:white;font-family:Arial;">H</center></div>
 						
 						<div id="divname1" style="position:absolute; margin-top:150px;width:60px;height:20px;opacity:.6;background-color:#b52647;display:none;">
-						<center style="color:white;font-family:Arial;">OSSAIN</center></div>
+						<center style="background-color:silver;color:white;font-family:Arial;">OSSAIN</center></div>
 						
 						<div id="div2" style="position:absolute; margin-top:190px; width:20px;height:20px;opacity:.6;background-color:#b52647;display:none;">
 						<center style="color:white; font-family:Arial;">I</center></div>
 						
 						<div id="divname2" style="position:absolute; margin-top:190px;width:50px;height:20px;opacity:.6;background-color:#b52647;display:none;">
-						<center style="color:white;font-family:Arial;">MRAN</center></div>
+						<center style="background-color:silver;color:white;font-family:Arial;">MRAN</center></div>
 						
 						<div id="div3" style="position:absolute;margin-top:230px; width:20px;height:20px;opacity:.6;background-color:#b52647;display:none;">
 						<center style="color:white; font-family:Arial;">!</center></div>
 						
-						<div id="divname3" style="position:absolute; margin-top:230px;width:75px;height:20px;opacity:.8;background-color:#b52647;display:none;">
+						<div id="divname3" style="position:absolute; margin-top:230px;width:80px;height:20px;opacity:.8;background-color:#b52647;display:none;">
 						<center style="color:white;font-family:Arial;">WELCOME</center></div>
 					</div>
 					
