@@ -16,6 +16,7 @@
 		<script>
 		
 			$(document).ready(function(){
+			//$("#projectWork").hide();
 			$("#pan1").slideDown("slow",function(){
 			$("#pan2").slideDown(500,function(){
 			$("#social").fadeIn(2000,function(){
@@ -107,6 +108,7 @@
 			$("#box6").animate({left: '+=40', top: '-=25'}, 1000);
 			$("#box7").animate({left: '-=40', top: '+=35'}, 1000);
 			$("#box8").animate({left: '-=40', top: '-=25'}, 1000);
+			$("#projectWork").fadeIn("slow");
 			});
 			});
 			
@@ -173,7 +175,7 @@
 			  $("#divname3").fadeIn("slow");
 			  
 			
-			});
+			  });
 			  });
 			  });
 			  });
@@ -284,6 +286,11 @@
 			  transform: scale(1.2,1.2);
 			  transition: transform 2s;
 			}
+			img .pic:hover
+			{
+			  transform: scale(1.5,1.5);
+			  transition: transform 3s;
+			}
 			
 		
 			
@@ -378,7 +385,7 @@
 							<div class="" id="pan1" style="text-align: justify; text-justify: inner-word; display:none;background-color:#004EA2; color:white; padding:7px;">
 							<b style="font-size:17px;">American Internation University Bangladesh(AIUB)</b> <br>
 							Bachelor of Science in Computer Science and Engineering <br> <br>
-							I am <i><b>Imran Hossain</b></i>, A computer science and engineering student at AIUB Academic year 2017-2021. I have great interest in learning 
+							I am <i><b>Imran Hossain</b></i>, A BSc computer science engineer graduated from AIUB Academic year 2017-2021. I have great interest in learning 
 							new things and try to explore problems with logical arguments. I don't give up until i reach my goal. I love programming in java and python.
 							Programming language are full of logics and algorithms. Whenever i feel i am done with logics and algorithms then I design pages with my insight
 							perceptions. I love Web designing more than logics because it reflects my insight beauty. And I know how precious the time is. I don't waste time
@@ -431,18 +438,110 @@
 			</div>
 			
 			<br>
-			<!-- <div class="container">
+			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
-					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-						<center><h2>Project Works</h2></center>
-					
+					<!-- <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div> -->
+					<div id="projectWork" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<center id="proj" style="padding-top:1px; padding-bottom:1px; background-color:#db8746; color:white; border-radius:20px;"><b><h4>PROJECT WORK</h4></b></center>
+						<br> <br>
+						<div style="background-color: silver;border-radius: 5px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul style="font-family:consolas;">
+								<li><h3><b>JAVA MOBILE APP</b></h3></li>
+							</ul>
+							<br>
+							<div style="margin-top:3%;margin-left:100px;">
+							<img class="pic" src="Photo/jmg.jpg" title="Homepage" style="margin-right:30px;margin-bottom: 30px;width:220px;height:200px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/jmg2.jpg" title="Game Interface" style="margin-right:30px;width:220px;height:200px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/jmg3.jpg" title="Score & Information" style="margin-right:30px;width:220px;height:200px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/jmg4.jpg" title="Score Leaderboard" style="margin-right:30px;width:220px;height:200px;color:white;display:inline;float:left;display:;">
+							
+						</div>
+						
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+
+					<div style="margin-top:50px;background-color: silver;border-radius: 5px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul style="font-family:consolas;">
+								<li><h3><b>MOVIE REVIEW SITE</b></h3></li>
+							</ul>
+							<br>
+							<div style="margin-top:3%;margin-left:100px;">
+							<img class="pic" src="Photo/mrs.png" title="Signup" style="margin-right:30px;margin-bottom: 30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/mrs2.png" title="Login" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/mrs3.png" title="Homepage" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/mrs4.png" title="Movie Review Read" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							
+						</div>
+						
+					</div>
+
+					<div style="margin-top:50px;background-color: silver;border-radius: 5px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul style="font-family:consolas;">
+								<li><h3><b>SEASONS OF BANGLADESH</b></h3></li>
+							</ul>
+							&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://imranalways.github.io/Explore/season.html" target="blank" title="https://imranalways.github.io/Explore/season.html" style="color:white; font-style:italic;font-family:consolas;">Season of Bangladesh with some Locations and Pictures</a>
+							<br>
+							<div style="margin-top:3%;margin-left:100px;">
+							<img class="pic" src="Photo/sob.png" title="Homepage" style="margin-right:30px; margin-bottom: 30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/sob2.png" title="Season Details" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/sob3.png" title="Season Specification" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/sob4.png" title="Location Details" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							
+						</div>
+						
+					</div>
+
+					<div style="margin-top:50px;background-color: silver;border-radius: 5px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul style="font-family:consolas;">
+								<li><h3><b>ONLINE SHOPPING(.NET PROJECT MVC)</b></h3></li>
+							</ul>
+							&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="http://btv6.somee.com/" target="blank" title="http://btv6.somee.com/" style="color:silver; font-style:italic;font-family:consolas;">Online shopping .NET project With MVC</a>
+							<br>
+							<div style="margin-top:3%;margin-left:100px;">
+							<img class="pic" src="Photo/np.png" title="Sell Product Offline" style="margin-right:30px; margin-bottom: 30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/np2.png" title="Note System" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/np3.png" title="Admin Panel" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/np4.png" title="Chat System" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							
+						</div>
+						
+					</div>
+
+					<div style="margin-top:50px;background-color: silver;border-radius: 5px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul style="font-family:consolas;">
+								<li><h3><b>ONLINE SHOPPING(.NET PROJECT API)</b></h3></li>
+							</ul>
+							
+							<br>
+							<div style="margin-top:3%;margin-left:100px;">
+							<img class="pic" src="Photo/npa.png" title="Pending Delivery Orders" style="margin-right:30px; margin-bottom: 30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/npa2.png" title="Accepted Delivery Orders" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/npa3.png" title="Sell Product Offline" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/npa4.png" title="Realtime Chat System" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							
+						</div>
+						
+					</div>
+
+					<div style="margin-top:50px; background-color: silver;border-radius: 5px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul style="font-family:consolas;">
+								<li><h3><b>BLOG(.NET PROJECT API)</b></h3></li>
+							</ul>
+							
+							<br>
+							<div style="margin-top:3% ;margin-left:100px;">
+							<img class="pic" src="Photo/bl.png" title="Login" style="margin-right:30px; margin-bottom: 30px; width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/bl2.png" title="Signup" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/bl3.png" title="All Posts" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							<img class="pic" src="Photo/bl4.png" title="Single Post" style="margin-right:30px;width:220px;height:180px;color:white;display:inline;float:left;display:;">
+							
+						</div>
+						
+					</div>
 					
 				</div>
-			</div> -->
-			
+
+			</div>
+			<br><br><br>
 			
 		</body>
 	</head>
